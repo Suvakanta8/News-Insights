@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 from dotenv import load_dotenv
 
 load_dotenv()
-openai_api_key = os.getenv('OPENAI_API_KEY')
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 def get_yt_text(video_url):
     url_data = urlparse(video_url)
