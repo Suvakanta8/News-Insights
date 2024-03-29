@@ -8,6 +8,7 @@ logging.basicConfig(level=logging.INFO)
 from dotenv import load_dotenv
 
 load_dotenv()
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 def get_yt_text(video_url):
     url_data = urlparse(video_url)
@@ -21,7 +22,7 @@ def get_blog_text(blog_url):
 
 def get_summary(text):
     try:
-        client = OpenAI()
+        client = OpenAI(api_key =openai_api_key )
         response = client.chat.completions.create(
             model="gpt-3.5-turbo-16k",
             messages=[
