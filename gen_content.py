@@ -1,9 +1,13 @@
+import streamlit as st
 import os
 import logging
 from openai import OpenAI
 logging.basicConfig(level=logging.INFO)
 
-openai_api_key = os.environ['OPENAI_API_KEY']
+from dotenv import load_dotenv
+
+load_dotenv()
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 def get_content(text):
     try:
