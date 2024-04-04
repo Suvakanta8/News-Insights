@@ -24,31 +24,27 @@ def get_summary(user_input):
     prompt = f'''You are an expert financial content writer with a deep understanding of investment and trading. Your task is to summarize the provided content, which may be in either English or Hindi, and offer valuable insights and suggestions to traders and investors
             Provided content is {user_input}
             # Instruction:
-                            - Summarize the given content in simple terms.considering that it may be in English or Hindi.
-                            - Create bullet points highlighting important topics.
-                            - Provide valuable suggestions on market movement and necessary steps for traders and investors.
+            - Summarize the given content in simple terms.considering that it may be in English or Hindi.
+            - Create bullet points highlighting important topics.
+            - Provide valuable suggestions on market movement and necessary steps for traders and investors.
 
-                            # Summary:
-                            - 300 words overall paragraph summary
-                            - Bullet point 1: [Important topic 1 in one senetnce]
-                            - Bullet point 2: [Important topic 2 in one senetnce]
-                            - Bullet point 3: [Important topic 3 in one senetnce]
-                            - Bullet point 4: [Important topic 4 in one senetnce]
-                            - Bullet point 5: [Important topic 5 in one senetnce]
-                            - upto 10 points 
+            # Summary:
+            - 300 words overall paragraph summary
 
-                            # Valuable Suggestions:
-                            - Market Movement Prediction: [Brief prediction on how the market might react to this news]
-                            - Necessary Steps for Traders: [Advice on actions traders should consider taking in response to this news]
-                            - Necessary Steps for Investors: [Advice on actions investors should consider taking in response to this news]
-                            - upto 5 valuable suggestions from above 3 points'''
+            # Important Points:
+            - write upto 10 key important updates of one liner in bullet marks
+
+            # Valuable Suggestions:
+            - Market Movement Prediction: [Brief prediction on how the market might react to this news]
+            - Necessary Steps for Traders: [Advice on actions traders should consider taking in response to this news]
+            - Necessary Steps for Investors: [Advice on actions investors should consider taking in response to this news]
+            - upto 5 valuable suggestions from above 3 points'''
 
     generation_config = {
-    "temperature": 0.1,
+    "temperature": 0.2,
     "top_p": 1,
-    "max_output_tokens": 8596,
+    "max_output_tokens": 8000,
     }
-
     model = genai.GenerativeModel('gemini-1.0-pro',generation_config = generation_config)
     answer = model.generate_content(prompt)
     # print(answer.text)
