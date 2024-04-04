@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "copper-diorama-348504",
+  "private_key_id": "19b296d1ea43a7330ac08ed1c9d02e50b2e82854",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCSMjz4a5aIgxYV\nmdMz4GLm+t4G4iSUnRYMm2YhuOIVIkZ9LtUCbfeqHoHJ4F+gF2avKOXjEm9m8D4v\nczlED+lfs+vfgoFkvNOGTHpOYOt8LouG27YaLap1jHx5bHaxT7HIhWjdLY5aHzKQ\nosBV/19TUz5ndv+sr6yHlX/PQU72GlPTHnHUF4Tg+n4+IKl4U+d2gQ/4qOSlrcha\n8bmRGSZI01ib68E/c6HJ8oaFLgu4XinTjVEln1i8QOkU8frpBy6Ok2EJvVjY3qNW\nu+Fx+Sie2KrHINpA+zAXcCOEC+PNQxschFuL/kr423bNpntSGeBBA3JaH8QGCQjZ\nmXIbAshpAgMBAAECggEAAiTRqrWg5SimFoHJ2hySx9pmagcRtXhWGHkpC1qfK4f0\nCHONZOF6A3IoSwDhxPUK5EKYPLKF5uZa6WCTSPBm780WBltKh/U/54mm66I+tTSV\nYkchUHRRVaEpzEMIPLAu8+bZNbVjWMIL2+JTF3+/N1v7rWRglaam1khLVmbQlzd7\nlM7KkCECH/DBOXEx4A2L/tJz1mocnrJjgFRRA3FhTW76ng9aVCLfiu3zKXZ50uUD\nqm4lS3QZkvfNhRM4KyNfgJCJ6IfcQlixd0wc3Q0vNz2TXBAK0uE8OB9+5uk2OWtL\nDrTH3EPIwWmKO5RxA90LdhzXx6oEjBd10lttynEAgQKBgQDKGNgJCaSPq6aTE6id\n+LtbMrRfen6v6PoZty4A7/gSR/ZttBnFc+LzLhOB5t99XfIc/QLMNvm2P5JbIb1u\np3C6QIO871Lx25vLG1h8flsUGHofbkKyy0WonWXOl+e/KRB774RKWO5cTQMtDp1I\nZotUy3rIe9fldlit/3ETwxmIqQKBgQC5MH7qie2f4D4AyQifk83s0I6NTyJFpWai\n47TALkDCbULtY0HE1C2gfun2edovpt5UbseOKZerxfC+VJRLPZJJvSitqjLI9jb5\nYTPhAKhGKuKy59qd57kF2EgHqMO00oYoLjaqrcvICDC01jsq1Bl4XI5Lrqv4wGCR\nn2vAakBZwQKBgGpelSZ8ms67q9rxl+g9iG9BysoOMSvpVem/DkmUBF+q3Lt09bOF\ngUg5Ui8nEy5rCgnT6WsO7HPOFfw9T/Uz0BNX7X6+AEwoKGHIrNQptUpob66nXBe7\nAZjz7yfDsEhfFrwEnv56vEp8hlVqwcHfpyokRyXKeSHfHmHGdv/NylyxAoGADOWH\nsSWx2rRvHPbjFtngOWG8y7J7HIaMQ0PATrHp6KBbTNTgu6hbFRZBjNyniTIBwbeF\nRi03VssOHPMe8K51BZWaw51atAwRgAR47G5zSY+rAfKLkvuUMwgA3CewmWMf3KR7\nQh+gVWncmntg23ax32PytOqRJ12eXAXSJzA/EwECgYEAitwMf8gIo8ZA7w0Mo3p2\nHKNhNXw2ayMtGwC6MzyoAa2PQFoa209yznFSTlZToQbvF6jQ2gjwfS+h2SrS5D4j\nn7ZFVI8GZUgj9R6u8YP9eLa8ubLNnpm5flIqtZz5sUdDBWpm44d2mMGLFQfdSwVX\nWIP5lk8vRRZ4Ma6GrKMzKkI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gemini@copper-diorama-348504.iam.gserviceaccount.com",
+  "client_id": "106974130485791131333",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gemini%40copper-diorama-348504.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
