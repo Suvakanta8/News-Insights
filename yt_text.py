@@ -1,5 +1,5 @@
 from youtube_transcript_api import YouTubeTranscriptApi
-
+proxy = "https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc"
 def extract_text(data):
     combined_text = ""
     for item in data:
@@ -9,7 +9,7 @@ def extract_text(data):
 def generate_transcript(id: str) -> str:
  
     try:
-        transcript = YouTubeTranscriptApi.get_transcript(id, languages=['en'])
+        transcript = YouTubeTranscriptApi.get_transcript(id, languages=['en'],proxies=proxy)
         script = ""
  
         for text in transcript:
@@ -21,7 +21,7 @@ def generate_transcript(id: str) -> str:
     except:
         print("No Transcript found for English.")
         # retrieve the available transcripts
-        transcript_list = YouTubeTranscriptApi.list_transcripts(id)
+        transcript_list = YouTubeTranscriptApi.list_transcripts(id,proxies=proxy)
  
         # iterate over all available transcripts
         for transcript in transcript_list:
@@ -29,6 +29,6 @@ def generate_transcript(id: str) -> str:
             print(f"Translating {transcript.language} to english")
  
             # Translating the language to English
-            transcript = YouTubeTranscriptApi.list_transcripts(id).find_transcript([transcript.language_code])
+            transcript = YouTubeTranscriptApi.list_transcripts(id,proxies=proxy).find_transcript([transcript.language_code])
             script = extract_text(transcript.translate('en').fetch())
             return script
