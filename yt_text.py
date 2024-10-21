@@ -3,23 +3,17 @@ import requests
 from youtube_transcript_api import YouTubeTranscriptApi
 from requests.exceptions import HTTPError
 
-# List of proxies
-proxies_list = [
-    "socks4://142.54.231.38:4145",
-    "socks4://51.161.131.84:50827",
-    "socks4://192.252.208.70:14282",
-    "socks4://142.54.237.34:4145",
-    "socks4://191.102.251.29:4153",
-    "socks4://88.151.190.251:37540",
-    "socks4://200.125.40.38:5678",
-    "socks4://215.108.106.191:3128",
-    "socks4://117.74.65.207:80",
-    "socks4://103.37.82.134:39873",
-    "http://87.98.148.98:80"
-]
+# Hardcoded file path for the proxies file (in the same directory as the script)
+PROXY_FILE_PATH = 'proxies.txt'
+
+# Function to read proxies from a text file
+def load_proxies_from_file():
+    with open(PROXY_FILE_PATH, 'r') as file:
+        proxies = [line.strip() for line in file if line.strip()]
+    return proxies
 
 # Function to choose a random proxy
-def get_random_proxy():
+def get_random_proxy(proxies_list):
     proxy = random.choice(proxies_list)
     return {
         "http": proxy,
@@ -28,7 +22,10 @@ def get_random_proxy():
 
 # Modified generate_transcript function to use a proxy
 def generate_transcript(id: str) -> str:
-    proxy = get_random_proxy()  # Get a random proxy
+    # Load proxies from the file
+    proxies_list = load_proxies_from_file()
+
+    proxy = get_random_proxy(proxies_list)  # Get a random proxy
 
     try:
         # Set up session with a proxy
