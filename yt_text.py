@@ -1,6 +1,7 @@
 import random
 import requests
-from youtube_transcript_api import YouTubeTranscriptApi, HTTPError
+from youtube_transcript_api import YouTubeTranscriptApi
+from requests.exceptions import HTTPError
 
 # List of proxies
 proxies_list = [
