@@ -4,7 +4,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from requests.exceptions import HTTPError
 
 # Hardcoded file path for the proxies file (in the same directory as the script)
-PROXY_FILE_PATH = 'proxies.txt'
+PROXY_FILE_PATH = './proxies.txt'
 
 # Function to read proxies from a text file
 def load_proxies_from_file():
